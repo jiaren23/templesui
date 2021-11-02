@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+  
+</head>
+
+<body ondragstart="return false;" onload="isHasLoad();loadImages('');" class="am-with-topbar-fixed-top">
+    <div id="loadingpage"
+        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(100, 100, 100, 0.2); z-index: 999999; display: none;">
+        <img src="//mytemples.com/site/images/loading_6.gif" alt="載入中"
+            style="width:40px;position:fixed;top:40%;left:50%;margin-top:-20px;margin-left:-20px;">
+    </div>
+    <script src="assets/js/jquery.lazyload.js" type="text/javascript"></script>
+    <script
+        type="text/javascript">jQuery(document).ready(function () { $("img.lazy").lazyload({ effect: "fadeIn" }); });</script>
+    <header class="petos-head-2 am-topbar am-topbar-fixed-top am-u-lg-centered am-hide-sm-only am-hide-md-only">
+            <div class="petos-head-3 am-topbar-container am-banner-sm am-banner-md am-banner-lg am-u-lg-centered">
+                <div class="petos-head-4 am-collapse am-topbar-collapse" id="collapse-head">
+                    <div class="petos-head-5 am-topbar-left" style="margin-top:3px;margin-right:10px;"><a
+                            href="//mytemples.com" onclick="LoadingNow();"><img class="petos-logo-01"
+                                src="//mytemples.com/wwwroot/測試區文玄寺/wenhsuan-logo.png" alt="LOGO"
+                                style="height:44px;max-height:44px;"></a></div>
+                    <ul id="topmenu" class="petos-head-0 am-nav am-nav-pills am-topbar-nav">
+                        <li class="am-menu-nav-li"><a href="https://mytemples.com/site/detail.php?wk=cn3c&amp;id=-0-1"
+                                onclick="LoadingNow();" rel="noopener noreferrer">寺廟之旅</a></li>
+                        <li class="am-menu-nav-li"><a href="https://mytemples.com/site/detail.php?wk=tplc"
+                                onclick="LoadingNow();" rel="noopener noreferrer">點燈入口</a></li>
+                        <li class="am-menu-nav-li"><a href="" onclick="LoadingNow();" rel="noopener noreferrer">燈種介紹</a>
+                        </li>
+                    </ul>
+                    <div class="petos-head-6 am-topbar-right " style="margin-top:-1px;">
+                        <div id="btn_mbrarea"><a
+                                href="detail.php?wk=login&amp;rtnurl=detail.php%3Fwk%3Dcn3c%26amp%3Bid%3D-0-1"
+                                onclick="LoadingNow();">
+                                <div class="petos-head-7 am-btn am-btn-menu am-topbar-btn am-btn-sm"><span
+                                        class="am-icon-user"></span> 登入 / 註冊</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <nav data-am-widget="menu" class="petos-head-8 am-menu am-menu-offcanvas1 am-no-layout"
+            data-am-menu-offcanvas="" style="margin-bottom:-1px;">
+            <div class="petos-head-9 am-topbar am-topbar-fixed-top am-header am-menu-toggle am-hide-lg-only"
+                style="position:fixed;top:0px;right:0px;width:100%;"><img class="petos-logo-02 petos-head-10 am-fl"
+                    src="//mytemples.com/wwwroot/測試區文玄寺/wenhsuan-logo.png" alt="LOGO"
+                    style="margin-top:3px;margin-left:6px;height:44px;"><span
+                    class="petos-head-11 am-fr am-menu-toggle-icon am-icon-bars am-badge-secondary"
+                    style="height:44px;width:44px;margin-top:3px;"></span></div>
+            <div id="am-offcanvas-area" class="petos-head-12 am-offcanvas">
+                <div class="petos-head-13 am-offcanvas-bar">
+                    <div class="petos-head-14" style="width:100%;height:60px;padding-top:2px;"><span class="am-fl"><a
+                                href="//mytemples.com"><img class="petos-logo-03"
+                                    src="//mytemples.com/wwwroot/測試區文玄寺/wenhsuan-logo.png" alt="LOGO"
+                                    style="max-height:58px;max-width:180px;margin-top:8.7px;margin-left:6px;max-width:140px;height:40.6px;"></a></span><a
+                            href="detail.php?wk=login&amp;rtnurl=detail.php%3Fwk%3Dcn3c%26amp%3Bid%3D-0-1"
+                            onclick="LoadingNow();">
+                            <div class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-fr"
+                                style="height:37.7px;margin-right:10px;margin-top:10.15px;"><span
+                                    class="am-icon-user"></span> 登入 註冊</div>
+                        </a></div>
+                    <ul class="petos-head-1 am-menu-nav">
+                        <li class="am-menu-nav-li"><a href="https://mytemples.com/site/detail.php?wk=cn3c&amp;id=-0-1"
+                                onclick="LoadingNow();">寺廟之旅</a></li>
+                        <li class="am-menu-nav-li"><a href="https://mytemples.com/site/detail.php?wk=tplc"
+                                onclick="LoadingNow();">點燈入口</a></li>
+                        <li class="am-menu-nav-li"><a href="" onclick="LoadingNow();">燈種介紹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div id="cn3c-content" class="am-g am-g-fixed">
+        <div data-am-widget="slider" class="am-slider am-slider-default am-no-layout" data-am-slider="{}">
+                <div class="am-viewport" style="overflow: hidden; position: relative;">
+                    <ul class="am-slides"
+                        style="width: 600%; transition-duration: 0s; transform: translate3d(-947px, 0px, 0px);">
+                        <li data-thumb="//mytemples.com/wwwroot/線上點燈全球網.jpg"
+                            style="width: 947px; float: left; display: block;" class="clone" aria-hidden="true"><img
+                                src="//mytemples.com/wwwroot/線上點燈全球網.jpg" draggable="false"></li>
+                        <li data-thumb="//mytemples.com/wwwroot/線上點燈全球網.jpg"
+                            style="width: 947px; float: left; display: block;" class="am-active-slide"><img
+                                src="//mytemples.com/wwwroot/線上點燈全球網.jpg" draggable="false"></li>
+                        <li data-thumb="//mytemples.com/wwwroot/線上點燈全球網.jpg"
+                            style="width: 947px; float: left; display: block;" class="clone" aria-hidden="true"><img
+                                src="//mytemples.com/wwwroot/線上點燈全球網.jpg" draggable="false"></li>
+                    </ul>
+                </div>
+                <ol class="am-control-nav am-control-paging"></ol>
+                <ul class="am-direction-nav">
+                    <li class="am-nav-prev"><a class="am-prev am-disabled" href="#" tabindex="-1"> </a></li>
+                    <li class="am-nav-next"><a class="am-next am-disabled" href="#" tabindex="-1"> </a></li>
+                </ul>
+            </div>
+            <div class="am-u-sm-12 am-u-md-7 am-u-lg-8">&nbsp;<select class="am-margin-vertical-sm" id="sel_path_0"
+                    name="sel_path_0" data-am-selected=""
+                    style="border: 0px; padding: 0px; cursor: pointer; display: none;"
+                    onchange="LoadingNow();location.href='detail.php?wk=cn3c&amp;id='+$('#sel_path_0 option:selected').val();">
+                    <option value="1">台灣廟宇</option>
+                </select>
+                <div class="am-selected am-dropdown" id="am-selected-pltpz" data-am-dropdown=""> <button type="button"
+                        class="am-selected-btn am-btn am-dropdown-toggle am-btn-default"> <span
+                            class="am-selected-status am-fl">台灣廟宇</span> <i
+                            class="am-selected-icon am-icon-caret-down"></i> </button>
+                    <div class="am-selected-content am-dropdown-content" style="min-width: 101.156px;">
+                        <h2 class="am-selected-header"><span class="am-icon-chevron-left">返回</span></h2>
+                        <ul class="am-selected-list">
+                            <li class="am-checked" data-index="0" data-group="0" data-value="1"> <span
+                                    class="am-selected-text">台灣廟宇</span> <i class="am-icon-check"></i></li>
+                        </ul>
+                        <div class="am-selected-hint"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-5 am-u-lg-4">
+                <form id="frm_search" class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search"
+                    method="POST" action="search.php?type=cn3">
+                    <div class="am-form-group am-u-lg-4 am-u-md-5 am-u-sm-9"><input type="text"
+                            class="am-form-field am-input-sm" placeholder="景點相關關鍵字" id="keywords" name="keywords"
+                            value=""></div><button type="button" class="am-btn am-btn-default am-btn-sm am-u-sm-3"
+                        onclick="LoadingNow();if($('#keywords').val()==''){alert('關鍵字不能空白');}else{$('#frm_search').submit();}">搜尋</button>
+                </form>
+            </div>
+        <div class="am-u-sm-12">
+            <form id="frm_vlist" method="POST" action="detail.php?wk=cn3c&amp;id=-0-1"><input type="hidden" id="pvmet"
+                    name="pvmet" value=""><input type="hidden" id="taobtlh" name="taobtlh" value="923598vk7csFYfHL">
+                <div id="tab2">
+                    <center><b></b> 共計<b> 34 </b>筆記錄<span class="am-btn am-btn-secondary am-btn-sm" style="float:left;"
+                            onclick="LoadingNow();get_mygps();">取得目前位置</span></center>
+
+                    <!--  資料卡  -->
+
+                    <ul id="boxshow" name="boxshow" class="am-avg-lg-4 am-avg-md-3 am-avg-sm-1 blog-team" style="">
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=1" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/文玄企業/banner00.jpg" alt="文玄企業"></a>
+                                </center>
+                                <div class="am-u-sm-12 am-padding-zero">
+                                    <div class="tpl-blc-title am-blc-title am-fl">文玄企業</div>
+                                    <div class="tpl-blc-maingod am-blc-title am-fr">藥師如來佛</div>
+                                </div>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">防疫燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師琉璃光佛燈</span>
+                                </a>
+                                <div class="tpl-blc-sdesc am-small am-margin-vertical-xs">
+                                    文玄光明燈自1970創立以來，<br>文玄努力五十年，<br>紮實打拼成為智慧光明燈領導者，<br>也是全球光明燈第一品牌，<br>秉持專業、匠心、嚴謹、誠懇，<br>我們光明燈產業開發更高科技、<br>更人性化產品，<br>承載著信徒們虔誠的心。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=1" target="cn3">
+                                        <blockquote>►詳全文</blockquote>
+                                    </a></div>
+                                <!-- <hr style="margin:  1rem 0 0.4rem 0;"> -->
+                                <div class="am-subtitle am-small tpl-blc-address">&nbsp;<a
+                                        href="//maps.google.com/maps?q=台中市西屯區中清路二段1335號"
+                                        target="_blank">台中市西屯區中清路二段1335號</a></div>
+
+                                        <a class="am-fc" href="//bless.mytemples.com" target="cn3">
+                                            <div class="am-btn am-btn-secondary am-btn-sm am-btn-gobless">我要點燈</div>
+                                        </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=1" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/文玄企業/banner00.jpg" alt="文玄企業"></a>
+                                </center>
+                                <div class="am-u-sm-12 am-padding-zero">
+                                    <div class="tpl-blc-title am-blc-title am-fl">文玄企業</div>
+                                    <div class="tpl-blc-maingod am-blc-title am-fr">藥師如來佛</div>
+                                </div>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">防疫燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師琉璃光佛燈</span>
+                                </a>
+                                <div class="tpl-blc-sdesc am-small am-margin-vertical-xs">
+                                    文玄光明燈自1970創立以來，<br>文玄努力五十年，<br>紮實打拼成為智慧光明燈領導者，<br>也是全球光明燈第一品牌，<br>秉持專業、匠心、嚴謹、誠懇，<br>我們光明燈產業開發更高科技、<br>更人性化產品，<br>承載著信徒們虔誠的心。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=1" target="cn3">
+                                        <blockquote>►詳全文</blockquote>
+                                    </a></div>
+                                <!-- <hr style="margin:  1rem 0 0.4rem 0;"> -->
+                                <div class="am-subtitle am-small tpl-blc-address">&nbsp;<a
+                                        href="//maps.google.com/maps?q=台中市西屯區中清路二段1335號"
+                                        target="_blank">台中市西屯區中清路二段1335號</a></div>
+
+                                        <a class="am-fc" href="//bless.mytemples.com" target="cn3">
+                                            <div class="am-btn am-btn-secondary am-btn-sm am-btn-gobless">我要點燈</div>
+                                        </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=1" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/文玄企業/banner00.jpg" alt="文玄企業"></a>
+                                </center>
+                                <div class="am-u-sm-12 am-padding-zero">
+                                    <div class="tpl-blc-title am-blc-title am-fl">文玄企業</div>
+                                    <div class="tpl-blc-maingod am-blc-title am-fr">藥師如來佛</div>
+                                </div>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">防疫燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師琉璃光佛燈</span>
+                                </a>
+                                <div class="tpl-blc-sdesc am-small am-margin-vertical-xs">
+                                    文玄光明燈自1970創立以來，<br>文玄努力五十年，<br>紮實打拼成為智慧光明燈領導者，<br>也是全球光明燈第一品牌，<br>秉持專業、匠心、嚴謹、誠懇，<br>我們光明燈產業開發更高科技、<br>更人性化產品，<br>承載著信徒們虔誠的心。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=1" target="cn3">
+                                        <blockquote>►詳全文</blockquote>
+                                    </a></div>
+                                <!-- <hr style="margin:  1rem 0 0.4rem 0;"> -->
+                                <div class="am-subtitle am-small tpl-blc-address">&nbsp;<a
+                                        href="//maps.google.com/maps?q=台中市西屯區中清路二段1335號"
+                                        target="_blank">台中市西屯區中清路二段1335號</a></div>
+
+                                        <a class="am-fc" href="//bless.mytemples.com" target="cn3">
+                                            <div class="am-btn am-btn-secondary am-btn-sm am-btn-gobless">我要點燈</div>
+                                        </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=1" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/文玄企業/banner00.jpg" alt="文玄企業"></a>
+                                </center>
+                                <div class="am-u-sm-12 am-padding-zero">
+                                    <div class="tpl-blc-title am-blc-title am-fl">文玄企業</div>
+                                    <div class="tpl-blc-maingod am-blc-title am-fr">藥師如來佛</div>
+                                </div>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">防疫燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師燈</span>
+                                </a>
+                                <a href="//bless.mytemples.com" target="temple">
+                                    <span class="am-btn am-btn-default am-btn-xs tpl-blc-tag">藥師琉璃光佛燈</span>
+                                </a>
+                                <div class="tpl-blc-sdesc am-small am-margin-vertical-xs">
+                                    文玄光明燈自1970創立以來，<br>文玄努力五十年，<br>紮實打拼成為智慧光明燈領導者，<br>也是全球光明燈第一品牌，<br>秉持專業、匠心、嚴謹、誠懇，<br>我們光明燈產業開發更高科技、<br>更人性化產品，<br>承載著信徒們虔誠的心。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=1" target="cn3">
+                                        <blockquote>►詳全文</blockquote>
+                                    </a></div>
+                                <!-- <hr style="margin:  1rem 0 0.4rem 0;"> -->
+                                <div class="am-subtitle am-small tpl-blc-address">&nbsp;<a
+                                        href="//maps.google.com/maps?q=台中市西屯區中清路二段1335號"
+                                        target="_blank">台中市西屯區中清路二段1335號</a></div>
+
+                                        <a class="am-fc" href="//bless.mytemples.com" target="cn3">
+                                            <div class="am-btn am-btn-secondary am-btn-sm am-btn-gobless">我要點燈</div>
+                                        </a>
+                            </div>
+                        </li>
+                       
+                                             
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=7" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/北部/台北市/艋舺龍山寺/banner00.jpg"
+                                            alt="艋舺龍山寺"></a></center>
+
+
+                                <div class="am-blc-title">艋舺龍山寺</div>
+
+
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    艋舺龍山寺，也稱萬華龍山寺，是位於臺灣臺北市萬華區富民里的觀音寺，為清治時期臺北城三邑人的信仰與政治、軍事中心，戰後時期成為外國旅客觀光景點，今建築列為國定古蹟。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=7" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a
+                                        href="//maps.google.com/maps?q=台北市萬華區廣州街211號" target="_blank">台北市萬華區廣州街211號</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=50" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/仕元代天府/192575915_1713811105492728_2435537193942216436_n.jpg"
+                                            alt="高雄仕元代天府"></a></center>
+                                <div class="am-blc-title">高雄仕元代天府</div>
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    仕元代天府位於新庄村仕元路右邊巷11號。由白樹、仕隆均可到檨仔腳，在仕元路左轉不久即可見到代天府，規模不大，前面有小廣場。 聽老一輩的人說，池府千歲是從大湖
+                                    (湖內鄉) 分靈來的，每年由信徒輪流奉祀，也就是安奉在爐主的家中，歷時二百多年。後來有士紳 許朝狀
+                                    先生暨故邱金源翁念及輪值不便，倡議興建廟堂，於民國五十三年捐地基，大家出錢建廟，於次年桂月 ( 八月 ) 竣工。</div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=50" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a
+                                        href="//maps.google.com/maps?q= 825高雄市橋頭區仕元路右邊巷11號" target="_blank">
+                                        825高雄市橋頭區仕元路右邊巷11號</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=4" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/北部/新北市/林口洪福宮/banner00.jpg"
+                                            alt="林口洪福宮"></a></center>
+                                <div class="am-blc-title">林口洪福宮</div>
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    位於台北縣林口發電廠附近之洪福宮，是供奉福德正神之廟宇，香火之鼎盛不亞於烘爐地之土地公廟，廟宇和一般土地公廟無異，但佔地非常廣闊，每至廟會時間車位&nbsp;...
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=4" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a
+                                        href="//maps.google.com/maps?q=新北市林口區106縣道139-11號"
+                                        target="_blank">新北市林口區106縣道139-11號</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=6" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/北部/桃園市/桃園景福宮/banner00.jpg"
+                                            alt="桃園景福宮"></a></center>
+                                <div class="am-blc-title">桃園景福宮</div>
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    景福宮主祀神明為開漳聖王，配祀為玄壇元帥，神像供奉於正殿，日後為了滿足各方信徒需求 ...</div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=6" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a
+                                        href="//maps.google.com/maps?q=桃園市桃園區中正路208號" target="_blank">桃園市桃園區中正路208號</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=42" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/雲林縣/麥寮拱範宮/tch441.jpg" alt="麥寮拱範宮"></a>
+                                </center>
+                                <div class="am-blc-title">麥寮拱範宮</div>
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    拱範宮始於1685年(清康熙24年)，由湄洲純真禪師創建，乾隆7年(西元1742年)遷於現址，1800年(嘉慶五年)公建；1827年(道光7年)重修正殿；迄今近370年歷史。拱範宮曾於昭和7年(西元1932年)重建，為精采之對場作之寺廟，其大木匠師；陳應彬、林火寅、王樹發，木雕：黃亀理，彩繪：潘春源，交趾：陳天乞，石雕：蔣九等人參與建造，均為當時一時之選之匠師；以現今觀之，均為一代匠師，目前殿內屋架、屋身、細部木構件等各構造保存完善。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=42" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a
+                                        href="//maps.google.com/maps?q= 638雲林縣麥寮鄉中正路3號" target="_blank">
+                                        638雲林縣麥寮鄉中正路3號</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=36" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/豐原-樂天宮/豐原-樂天宮.jpg"
+                                            alt="豐原-樂天宮"></a></center>
+                                <div class="am-blc-title">豐原-樂天宮</div>
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    係於民國四十一年歲次壬辰年(西年一九五二年)建廟神靈顯赫善信日增，本宮數次改建蒙荷全體信徒團結，努力策劃贊助廟宇新貌乃成，儼然肅穆、燦爛輝煌、巧奪天工、景觀絢麗、耀眼奪目、廣場遼闊、樹林蒼翠、奇花異草、環境優雅活動聖地，關聖帝君神恩有感有求必應，香客不遠千里而來膜拜，香火日益鼎盛神威遠播，聲譽馳名於全國本會修撰成冊，編印沿革以為廣傳永垂後世，祈求關聖帝君庇佑，風調雨順，國泰民安、福壽安康、萬事如意。
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=36" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a href="//maps.google.com/maps?q="
+                                        target="_blank"></a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-thumbnail" style="overflow:hidden;">
+                                <center><a href="detail.php?wk=cn3&amp;id=41" target="cn3"><img
+                                            class="am-img-thumbnail am-img-bdrs"
+                                            src="//mytemples.com/wwwroot/台灣廟宇/中部/台中市/清水紫雲巖/01.jpg" alt="清水紫雲巖"></a>
+                                </center>
+                                <div class="am-blc-title">清水紫雲巖</div>
+                                <div class="am-blc-sdesc am-small am-margin-vertical-xs">
+                                    本巖座落於台中市清水區大街路206號，鰲峰山之西麓，東屏鰲峰山毓秀之紫氣，西向名聞國際之臺中港，南環大肚溪之清流，北接大甲溪之潤澤，地脈鍾靈。<br>紫雲者，祥瑞之氣也，先民以鰲峰山凝聚「山之紫雲之端」，乃取「紫雲」為本巖之稱號。<br>
+                                </div>
+                                <div class="am-blc-sdesc am-margin-vertical-xs">&nbsp;<a class="am-fl"
+                                        href="detail.php?wk=cn3&amp;id=41" target="cn3">
+                                        <blockquote>閱讀全文</blockquote>
+                                    </a></div>
+                                <hr style="margin:  1rem 0 0.4rem 0;">
+                                <div class="am-subtitle am-small tpl-blc-address"><span
+                                        class="am-icon-map-marker"></span>&nbsp;<a
+                                        href="//maps.google.com/maps?q= 436台中市清水區大街路206號" target="_blank">
+                                        436台中市清水區大街路206號</a></div>
+                            </div>
+                        </li>
+                    </ul><b></b> 尚有<b> 22 </b>筆記錄
+                </div>
+                <div style="text-align:center;"><img class="animation_image"
+                        src="//mytemples.com/site/images/loading_6.gif" style="width: 40px; display: none;" alt="載入中">
+                </div>
+            </form>
+        </div>
+    </div>
+    <center>
+        <div class="self-footer">
+            <footer class="petos-foot-0 footer">
+                <p>&nbsp;</p>
+
+                <p noto="" sans=""
+                    style="box-sizing: border-box; margin: 0px 0px 1.6rem; font-family: Montserrat，; text-align: center;"
+                    tc=""><span style="box-sizing: border-box; font-size: 15px;"><img alt=""
+                            src="https://mytemples.com/wwwroot/Jiaren_Test/footer/footerLogo.png"
+                            style="width: 156px; height: 85px;"></span></p>
+
+                <p noto="" sans=""
+                    style="box-sizing: border-box; margin: 0px 0px 1.6rem; font-family: Montserrat，; text-align: center;"
+                    tc=""><span style="box-sizing: border-box; font-size: 15px;">407台灣台中市西屯區中清路二段1335號</span></p>
+
+                <p noto="" sans=""
+                    style="box-sizing: border-box; margin: 1.6rem 0px; font-family: Montserrat，; text-align: center;"
+                    tc=""><span style="box-sizing: border-box; font-size: 15px;">☎ 電話：<a
+                            href="tel: 04-24252423&amp;intent=true"
+                            style="box-sizing: border-box; cursor: pointer; background-color: transparent; text-decoration: underline; color: #fff;"><span>&nbsp;</span>04-24252423</a><span>&nbsp;</span></span>
+                </p>
+
+                <p style="text-align:center"><span style="color:'#fffff'; font-size:15px">版權所有 © 2021&nbsp;wenhsuan
+                        Taiwan Inc.&nbsp;</span></p>
+                <center><img src="//mytemples.com/wwwroot/測試區文玄寺/wenhsuan-logo.png"
+                        style="opacity: 0.4;margin-top:10px;width:50px;" title="cs" alt="cs"></center>
+            </footer>
+            <!--[if (gte IE 9)|!(IE)]><!-->
+            <div data-am-widget="navbar" class="am-no-layout">
+                <ul>
+                    <li>
+                        <div id="btn_back" style="position:fixed;bottom:10px;right:10px;z-index:999;">
+                            <div title="回到頂部"
+                                class="petos-foot-1 am-icon-btn am-secondary am-icon-arrow-up am-opacity-8"
+                                id="amz-go-top" onclick="$(document).scrollTop(0);" style="cursor:pointer;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script
+                type="text/javascript">$(function () { $("opensearch").click(function (e) { e.preventDefault(); var $this = $(this); var horizontalPadding = 30; var verticalPadding = 30; $(document).scrollTop(0); $("#searcharea").dialog({ title: ($this.attr("title")) ? $this.attr("title") : "全站搜尋", autoOpen: true, width: $(this).attr("width"), modal: true, resizable: true, closeOnEscape: false, open: function (event, ui) { $(this).parent().children().children(".ui-dialog-titlebar-close").hide(); $("#btn_share").hide(); $("#btn_back").hide(); $("#btn_gotop").hide(); }, buttons: { "關閉視窗": function () { $(this).dialog("close"); $("#btn_share").show(); $("#btn_back").show(); $("#btn_gotop").show(); } }, overlay: { opacity: 0.5, background: "black" } }).width($(document).width() - horizontalPadding).height($(this).attr("height")); }); });</script>
+            <script>function chk_keywords() { searchform.submit(); }</script>
+            <div class="petos-foot-2" id="searcharea" name="searcharea"
+                style="height:140px;display:none;margin-left:-14px;">
+                <form class="petos-foot-3 am-panel-bd am-form am-form-horizontal" accept-charset="UTF-8" id="searchform"
+                    name="searchform" action="search.php?type=all&amp;intent=false" method="post" style="width:360px;">
+                    <input type="hidden" id="csrf" name="csrf" value="95e15e32641b10a8863534b79e3ee0ba"><input
+                        autocomplete="off" id="keywords" name="keywords" type="text" placeholder="輸入關鍵字，查找您要的資訊……"
+                        style="width:74%;float:left;display:inline;"><button type="button"
+                        class="petos-foot-4 am-icon-search am-btn am-btn-success am-topbar-btn am-btn-xs"
+                        onclick="chk_keywords();"
+                        style="float:left;padding-left:10px;margin-top:0px;height:45px;width:80px;"> 搜尋</button>
+                </form>
+            </div>
+            <opensearch title="全站搜尋" width="360" height="60" id="btn_gotop" class="amz-toolbar"
+                style="position:fixed;bottom:10px;right:76px;z-index:999;">
+                <div title="全站搜尋" class="petos-foot-5 am-icon-btn am-icon-search am-opacity-8" id="amz-go-top"
+                    onclick="$(document).scrollTop(0);" style="cursor:pointer;"></div>
+            </opensearch><a href="detail.php?wk=shopcart" onclick="LoadingNow();">
+                <div id="cartpup" class="petos-foot-6 am-icon-btn am-success am-opacity-8"
+                    style="position:fixed;bottom:10px;right:142px;z-index:999;cursor:pointer;display:none !important;">
+                    <div id="carttext" style="position:relative;top:4px;color:#FFF;line-height:20px;font-size:14pt;">
+                        <span class="petos-foot-7 am-icon-shopping-cart" style="font-size:16pt;"></span><br>
+                    </div>
+                </div>
+            </a><input type="hidden" id="share_mbru" name="share_mbru" value=""><input type="hidden" id="share_caption"
+                name="share_caption" value="文玄國寶線上點燈"><input type="hidden" id="share_url" name="share_url"
+                value="https://mytemples.com/site/detail.php?wk=cn3c&amp;id=-0-1"><input type="hidden" id="share_topic"
+                name="share_topic" value="文玄國寶線上點燈台灣廟宇 相關資訊清單"><input type="hidden" id="share_sdesc" name="share_sdesc"
+                value="文玄國寶線上點燈台灣廟宇 相關資訊清單"><input type="hidden" property="og:image" id="share_pic" name="share_pic"
+                value="https://mytemples.com/wwwroot/測試區文玄寺/wenhsuan-logo.png">
+            <script type="text/javascript" src="assets/datetime/bootstrap/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="assets/datetime/bootstrap-datetimepicker.min.js"
+                charset="UTF-8"></script>
+            <script type="text/javascript" src="assets/datetime/locales/bootstrap-datetimepicker.zh-TW.js"
+                charset="UTF-8"></script>
+            <script
+                type="text/javascript">$(".form_date").datetimepicker({ language: "zh-TW", weekStart: 7, todayBtn: 0, autoclose: 1, todayHighlight: 1, startView: 2, minView: 2, forceParse: 0 });</script>
+            <script src="assets/js/petos.min.js"></script>
+            <script>$(document).ready(function (e) { $("img[usemap]").rwdImageMaps(); });</script>
+        </div>
+    </center>
+    <link rel="search" type="application/opensearchdescription+xml"
+        href="//mytemples.com/seo1_xml.php?a=%u6587%u7384%u570B%u5BF6%u7DDA%u4E0A%u9EDE%u71C8%u53F0%u7063%u5EDF%u5B87%20%u76F8%u95DC%u8CC7%u8A0A%u6E05%u55AE&amp;b=%u6587%u7384%u570B%u5BF6%u7DDA%u4E0A%u9EDE%u71C8%u53F0%u7063%u5EDF%u5B87%20%u76F8%u95DC%u8CC7%u8A0A%u6E05%u55AE&amp;c=%39%34%31%37%36%38%40%67%6D%61%69%6C%2E%63%6F%6D&amp;d=%68%74%74%70%73%3A%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%73%69%74%65%2F%64%65%74%61%69%6C%2E%70%68%70%3F%77%6B%3D%63%6E%33%63%26%69%64%3D%2D%30%2D%31&amp;e=%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%77%77%77%72%6F%6F%74%2F%73%6D%61%6C%6C%4C%6F%67%6F%2E%70%6E%67&amp;f=%68%74%74%70%73%3A%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%77%77%77%72%6F%6F%74%2F%u6E2C%u8A66%u5340%u6587%u7384%u5BFA%2F%77%65%6E%68%73%75%61%6E%2D%6C%6F%67%6F%2E%70%6E%67&amp;g=%68%74%74%70%73%3A%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%77%77%77%72%6F%6F%74%2F%u6E2C%u8A66%u5340%u6587%u7384%u5BFA%2F%77%65%6E%68%73%75%61%6E%2D%6C%6F%67%6F%2E%70%6E%67"
+        title="文玄國寶線上點燈台灣廟宇 相關資訊清單">
+    <link rel="search" type="application/opensearchdescription+xml"
+        href="//mytemples.com/seo2_xml.php?a=%u6587%u7384%u570B%u5BF6%u7DDA%u4E0A%u9EDE%u71C8%u53F0%u7063%u5EDF%u5B87%20%u76F8%u95DC%u8CC7%u8A0A%u6E05%u55AE&amp;b=%u6587%u7384%u570B%u5BF6%u7DDA%u4E0A%u9EDE%u71C8%u53F0%u7063%u5EDF%u5B87%20%u76F8%u95DC%u8CC7%u8A0A%u6E05%u55AE&amp;c=%39%34%31%37%36%38%40%67%6D%61%69%6C%2E%63%6F%6D&amp;d=%68%74%74%70%73%3A%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%73%69%74%65%2F%64%65%74%61%69%6C%2E%70%68%70%3F%77%6B%3D%63%6E%33%63%26%69%64%3D%2D%30%2D%31&amp;e=%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%77%77%77%72%6F%6F%74%2F%73%6D%61%6C%6C%4C%6F%67%6F%2E%70%6E%67&amp;f=%68%74%74%70%73%3A%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%77%77%77%72%6F%6F%74%2F%u6E2C%u8A66%u5340%u6587%u7384%u5BFA%2F%77%65%6E%68%73%75%61%6E%2D%6C%6F%67%6F%2E%70%6E%67&amp;g=%68%74%74%70%73%3A%2F%2F%6D%79%74%65%6D%70%6C%65%73%2E%63%6F%6D%2F%77%77%77%72%6F%6F%74%2F%u6E2C%u8A66%u5340%u6587%u7384%u5BFA%2F%77%65%6E%68%73%75%61%6E%2D%6C%6F%67%6F%2E%70%6E%67"
+        title="文玄國寶線上點燈台灣廟宇 相關資訊清單">
+    <div class="page"></div>
+</body>
+
+</html>
